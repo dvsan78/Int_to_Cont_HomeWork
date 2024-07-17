@@ -8,4 +8,4 @@ lxc-create -t astralinux-se -n myapp
 lxc-start myapp
 lxc-attach myapp
 apt-get update
-apt-install nginx php-fpm
+apt install nginx php-fpm
