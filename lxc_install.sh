@@ -1,7 +1,11 @@
 #!/bin/bash
 echo “Updating system and installing dependences”
-apt-get update > /dev/null 2>&1
-apt-get upgrade -y > /dev/null 2>&1
+apt-get update 
+apt-get upgrade -y  
 apt-get install lxc lxc-astra
-echo “Create conteiner name $1”
-sudo lxc-create -t ubuntu -n $1
+echo “Create conteiner name myapp”
+lxc-create -t astralinux-se -n myapp
+lxc-start myapp
+lxc-attach myapp
+apt-get update
+apt-install nginx php-fpm
