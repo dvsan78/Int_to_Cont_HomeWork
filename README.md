@@ -79,7 +79,9 @@
 Пишем код в папке develop/index.php на хостовой машине и проверяем его работу в LXS контейнере, предварительн уточнив адрес
 
 >user@astra:~$ sudo lxc-ls -f
+>
 >NAME   STATE   AUTOSTART GROUPS IPV4      IPV6 UNPRIVILEGED
+>
 >myapp RUNNING 0         -      10.0.3.35 -    false
 
 **Проверка открыть в браузере хоста url http://10.0.3.35/index.php**
