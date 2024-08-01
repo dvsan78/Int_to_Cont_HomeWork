@@ -37,9 +37,9 @@
   Выполняем в контейнере
   
 > sudo lxc-attach myapp -- userdel -r admin
- sudo lxc-attach myapp -- groupadd -g 1000 user
- sudo lxc-attach myapp -- useradd -s /bin/bash --gid  1000 -G user --uid 1000 -m user
-> 
+> sudo lxc-attach myapp -- groupadd -g 1000 user
+> sudo lxc-attach myapp -- useradd -s /bin/bash --gid  1000 -G user --uid 1000 -m user
+
 **настраиваем nginx**
    
  >sudo lxc-attach -n myapp2  nano /etc/nginx/sites-available/default
