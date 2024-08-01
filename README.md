@@ -64,9 +64,12 @@
 изменяем  в строчках пользователя
   
 >user = www-data
+>
 >group = www-data
+>
  на 
 >user = user
+>
 >group = user
 
 Делам рестарт systemctl restart php7.3-fpm
