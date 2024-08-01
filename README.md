@@ -6,6 +6,7 @@ deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.3/repository-base/     1
 deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.3/repository-extended/ 1.7_x86-64 main contrib non-free
 
 **Сценарий**
+
  Выполняем скрипт на хосте скрипт создает контейнер myapp c установленным php и nginx.
 
  
