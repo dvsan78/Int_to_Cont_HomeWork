@@ -6,6 +6,7 @@
 Содержание файла /etc/apt/sources.list:
 
 >deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.3/repository-base/     1.7_x86-64 main contrib non-free
+>
 >deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.3/repository-extended/ 1.7_x86-64 main contrib non-free
 
 **Сценарий**
@@ -31,14 +32,16 @@
   
   >user@astra:~$ id
 >
-  >uid=1000(user) gid=1000(user) группы=1000(user),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),109(netdev),113(lpadmin),114(scanner),333(astra-  
-  console),1001(astra-admin)
+  >uid=1000(user) gid=1000(user) группы=1000(user),
   
   Выполняем в контейнере
   
 > sudo lxc-attach myapp -- userdel -r admin
+> 
 > sudo lxc-attach myapp -- groupadd -g 1000 user
+> 
 > sudo lxc-attach myapp -- useradd -s /bin/bash --gid  1000 -G user --uid 1000 -m user
+> 
 
 **настраиваем nginx**
    
