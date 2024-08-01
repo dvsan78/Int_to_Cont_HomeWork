@@ -15,7 +15,7 @@
  
  Далее необходимо выполнить следующие действия:
 
- - **cоздаем в домашней папке user директорию develop (в которой будем писать код),пробрасываем ее в контейнер:**
+**Cоздаем в домашней папке user директорию develop (в которой будем писать код),пробрасываем ее в контейнер:**
    
  добавляем в  /var/lib/lxc/myapp/config строчку
  
@@ -25,11 +25,12 @@
  
   >sudo lxc-start myapp
    
--**настраиваем  пользователя в контейнере таким образом чтобы его uid и gid  соответсвовал пользователю на хостовой машине**
+-**Настраиваем  пользователя в контейнере таким образом чтобы его uid и gid  соответсвовал пользователю на хостовой машине**
 
   Определяем id текущего пользователя на хостовой машине
   
   >user@astra:~$ id
+>
   >uid=1000(user) gid=1000(user) группы=1000(user),24(cdrom),25(floppy),29(audio),30(dip),44(video),46(plugdev),109(netdev),113(lpadmin),114(scanner),333(astra-  
   console),1001(astra-admin)
   
@@ -39,7 +40,7 @@
  sudo lxc-attach myapp -- groupadd -g 1000 user
  sudo lxc-attach myapp -- useradd -s /bin/bash --gid  1000 -G user --uid 1000 -m user
 > 
- - **настраиваем nginx**
+**настраиваем nginx**
    
  >sudo lxc-attach -n myapp2  nano /etc/nginx/sites-available/default
  
@@ -53,9 +54,9 @@
 
 >sudo lxc-attach -n myapp2  nginx -s reload
 
-- **настраиваем PHP**
+**настраиваем PHP**
   
-  >sudo lxc-attach -n myapp nano /etc/php/7.3/fpm/pool.d/www.conf
+>sudo lxc-attach -n myapp nano /etc/php/7.3/fpm/pool.d/www.conf
     
 изменяем  в строчках пользователя
   
@@ -67,7 +68,7 @@
 
 Делам рестарт systemctl restart php7.3-fpm
 
-  **Проверка написанного кода**
+**Проверка написанного кода**
   
 Пишем код в папке develop/index.php на хостовой машине и проверяем его работу в LXS контейнере, предварительн уточнив адрес
 
