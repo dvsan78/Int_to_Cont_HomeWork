@@ -7,7 +7,11 @@ deb http://dl.astralinux.ru/astra/frozen/1.7_x86-64/1.7.3/repository-extended/ 1
 
 **Сценарий**
  Выполняем скрипт на хосте скрипт создает контейнер myapp c установленным php и nginx.
+
+ 
  Далее необходимо выполнить следующие действия:
+
+ 
 - **cоздаем в домашней папке user директорию develop (в которой будем писать код),пробрасываем ее в контейнер:**
  добавляем в  /var/lib/lxc/myapp/config строчку
    lxc.mount.entry = /home/user/develop var/www/html none bind, create-dir ,rw 0 0 
