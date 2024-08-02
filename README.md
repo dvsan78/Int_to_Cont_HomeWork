@@ -55,7 +55,8 @@
 
 проверяем конфигурацию  nginx , делаем reload
 
->sudo lxc-attach -n myapp  nginx -s reload
+>sudo lxc-attach myapp
+>nginx -s reload
 
 **Настраиваем PHP**
   
