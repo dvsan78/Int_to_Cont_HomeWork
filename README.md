@@ -43,7 +43,7 @@
 > sudo lxc-attach myapp -- useradd -s /bin/bash --gid  1000 -G user --uid 1000 -m user
 > 
 
-**настраиваем nginx**
+**Настраиваем nginx**
    
  >sudo lxc-attach -n myapp  nano /etc/nginx/sites-available/default
  
@@ -57,7 +57,7 @@
 
 >sudo lxc-attach -n myapp  nginx -s reload
 
-**настраиваем PHP**
+**Настраиваем PHP**
   
 >sudo lxc-attach -n myapp nano /etc/php/7.3/fpm/pool.d/www.conf
     
