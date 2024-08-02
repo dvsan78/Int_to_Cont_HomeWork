@@ -20,7 +20,7 @@
    
  добавляем в  /var/lib/lxc/myapp/config строчку
  
- >lxc.mount.entry = /home/user/develop var/www/html none bind, create-dir ,rw 0 0 
+ >lxc.mount.entry = /home/user/develop **var/www/html** none bind, create-dir ,rw 0 0 
    
  запускаем контейнер
  
