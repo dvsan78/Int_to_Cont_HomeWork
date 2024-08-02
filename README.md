@@ -72,7 +72,9 @@
 >
 >group = user
 
-Делам рестарт systemctl restart php7.3-fpm
+Делам рестарт 
+
+>systemctl restart php7.3-fpm
 
 **Проверка написанного кода**
   
