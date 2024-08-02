@@ -80,7 +80,8 @@
 
 >user@astra:~$ sudo lxc-ls -f
 
-NAME |  STATE |  AUTOSTART| GROUPS| IPV4 |      IPV6| UNPRIVILEGED |
+| NAME |  STATE | AUTOSTART | GROUPS | IPV4 | IPV6 | UNPRIVILEGED |
+| --- | --- | --- | --- | --- | --- | --- |
 myapp | RUNNING | 0  |       -  |    10.0.3.35| - |   false |
 
 **Проверка открыть в браузере хоста url http://10.0.3.35/index.php**
