@@ -59,7 +59,7 @@
 
 **Настраиваем PHP**
   
->sudo lxc-attach -n myapp nano /etc/php/7.3/fpm/pool.d/www.conf
+>sudo lxc-attach myapp nano /etc/php/7.3/fpm/pool.d/www.conf
     
 изменяем  в строчках пользователя
   
