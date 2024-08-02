@@ -45,7 +45,7 @@
 
 **настраиваем nginx**
    
- >sudo lxc-attach -n myapp2  nano /etc/nginx/sites-available/default
+ >sudo lxc-attach -n myapp  nano /etc/nginx/sites-available/default
  
  раскоментируем строки    
  
@@ -55,7 +55,7 @@
 
 проверяем конфигурацию  nginx , делаем reload
 
->sudo lxc-attach -n myapp2  nginx -s reload
+>sudo lxc-attach -n myapp  nginx -s reload
 
 **настраиваем PHP**
   
